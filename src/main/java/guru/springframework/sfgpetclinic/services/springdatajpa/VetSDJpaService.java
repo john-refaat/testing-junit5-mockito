@@ -1,9 +1,11 @@
 package guru.springframework.sfgpetclinic.services.springdatajpa;
 
+import guru.springframework.sfgpetclinic.model.Speciality;
 import guru.springframework.sfgpetclinic.model.Vet;
 import guru.springframework.sfgpetclinic.repositories.VetRepository;
 import guru.springframework.sfgpetclinic.services.VetService;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -39,6 +41,6 @@ public class VetSDJpaService implements VetService {
 
     @Override
     public void deleteById(Long aLong) {
-        vetRepository.deleteById(aLong);
+       vetRepository.deleteById(aLong);
     }
 }
